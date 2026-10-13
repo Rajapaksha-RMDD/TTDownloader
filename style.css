@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Applied Roboto Font */
+    font-family: 'Roboto', sans-serif; 
+}
+
+body {
+    background-color: #0f0f13; /* Dark background matching the image */
+    color: #ffffff;
+}
+
+.top-nav {
+    background-color: #1a1a24;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #2a2a35;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.hero-section {
+    position: relative;
+    /* Added Background image with a #340A10 gradient overlay to keep your color code */
+    background-image: linear-gradient(to bottom right, rgba(52, 10, 16, 0.9), rgba(76, 29, 149, 0.9)), 
+                      url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1920&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Pill-shaped Format Selectors */
+.format-selectors {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 30px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.format-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.format-btn.active, .format-btn:hover {
+    background: white;
+    color: #333;
+}
+
+/* Action Area (Input & Download) */
+.action-area {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 750px;
+    margin: 0 auto 20px auto;
+    flex-wrap: wrap; /* Allows stacking on small mobile screens */
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 5px 10px 5px 20px;
+    flex-grow: 1;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.link-icon {
+    color: #666;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+#video-url {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+}
+
+/* The Paste Button Inside The Input Box */
+#paste-btn {
+    background: #f0f2f5;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+#paste-btn:hover {
+    background: #e4e6e9;
+}
+
+/* The Green Download Button */
+#download-btn {
+    background-color: #00b85c;
+    color: white;
+    border: none;
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+    height: 60px; /* Matches the height of the input wrapper */
+}
+
+#download-btn:hover {
+    background-color: #009e4f;
+}
+
+.perks {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 20px;
+}
+
+/* Bottom Information Section */
+.info-section {
+    background-color: #0f0f13;
+    padding: 60px 10%;
+    line-height: 1.8;
+    color: #b0b0b0;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#status-message { margin-top: 20px; font-weight: 500; }
+#final-download-link {
+    display: inline-block; background-color: #28a745; color: white;
+    padding: 12px 25px; text-decoration: none; border-radius: 5px;
+    font-weight: bold; margin-top: 15px;
+}

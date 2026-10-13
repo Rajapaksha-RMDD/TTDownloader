@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Video Downloader Without Watermark</title>
+    
+    <!-- 1. Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 2. FontAwesome for icons (Link, Paste, Download) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="logo"><span style="color: #ff0050;">TT</span>Downloader</div>
+    </header>
+
+    <main class="hero-section">
+        <div class="content-wrapper">
+            <h1>TikTok Downloader Without Watermark</h1>
+            <p class="subtitle">Download TikTok Videos No Watermark (MP4 & MP3 High Quality)</p>
+            
+            <!-- Format Selectors -->
+            <div class="format-selectors">
+                <button class="format-btn active">Video</button>
+                <button class="format-btn">Mp3</button>
+                <button class="format-btn">Slideshow</button>
+                <button class="format-btn">Story</button>
+            </div>
+
+            <!-- Input and Download Area -->
+            <div class="action-area">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-link link-icon"></i>
+                    <input type="text" id="video-url" placeholder="Paste TikTok link here">
+                    <button id="paste-btn"><i class="fa-regular fa-paste"></i> Paste</button>
+                </div>
+                <button id="download-btn"><i class="fa-solid fa-download"></i> Download</button>
+            </div>
+            
+            <p class="perks">Free • No Watermark • HD Quality • No Signup</p>
+
+            <div id="status-message"></div>
+            <div id="result-container" style="display: none;">
+                <a id="final-download-link" href="#" target="_blank">Click here to save your video</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Information Section -->
+    <section class="info-section">
+        <p>Welcome to our browser-based tool for saving TikTok media without watermarks. Whether you want to back up your own content, archive favorite clips, or save trending sounds, this tool delivers the media directly to your device with no app and no signup required.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
